@@ -1,0 +1,22 @@
+<html>
+   <head>
+       <title>{% block head_title %}Welcome to my blog{% endblock %}</title>
+   </head>
+   <body>
+       <h1>{% block title %}Welcome to my blog with Django framework!{% endblock %}</h1>
+       {% block content %}
+   <h2>Posts</h2>
+   {% if post_list %}
+       <ul>
+       {% for post in post_list %}
+           <li><a href="{{ post.post_list }}">{{ post.title }}</a></li>
+       {% endfor %}
+
+   {{ post_list.body }}
+       </ul>
+   {% else %}
+       <p>There are no posts.</p>
+   {% endif %}
+       {% endblock %}
+   </body>
+</html>

@@ -1,0 +1,1 @@
+C:\Users\catafest\AppData\Local\atom\atom.exe C:\Python364\mywebsite\myvenv\Scripts\mysite\
