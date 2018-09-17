@@ -8,4 +8,5 @@ The project base started from this article https://python-catalin.blogspot.com/2
  - this run 192.168.0.185:8080
 2. I add templates HTML5 files. 
 3. I changed urls.py and views.py to work well.
-4. 
+4. try to use django_otp , see :
+[Imgur](https://i.imgur.com/GYzm81L.png)
