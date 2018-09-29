@@ -25,7 +25,7 @@ SECRET_KEY = 'qy1ch)6u68dowxs@q^ui5t5slyqs4&l1+2^k67#gah-52@oo$#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.185','mysite.com']
+ALLOWED_HOSTS = ['192.168.0.129','mysite.com']
 
 
 # Application definition
@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myblog',
-    'django_otp',
-    'django_otp.plugins.otp_totp',
+#    'django_otp',
+#    'django_otp.plugins.otp_totp',
 ]
 
 MIDDLEWARE = [
@@ -50,8 +50,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django_otp.middleware.OTPMiddleware',
+#    'django.contrib.auth.middleware.AuthenticationMiddleware',
+#    'django_otp.middleware.OTPMiddleware',
 ]
 
 OTP_TOTP_ISSUER = 'Awesome Inc.'

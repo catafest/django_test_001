@@ -4,19 +4,21 @@
    </head>
    <body>
        <h1>{% block title %}Welcome to my blog with Django framework!{% endblock %}</h1>
-       {% block content %}
+   {% block content %}
    <h2>Posts</h2>
-   {% if post_list %}
+   {% if posts %}
        <ul>
-       {% for post in post_list %}
-           <li><a href="{{ post.post_list }}">{{ post.title }}</a></li>
+       {% for post in posts %}
+           <li><a href="{{ post. }}">{{ post.title }}</a></li>
+           <p>{{post.snippet}}</p>
+           <p>{{post.author}}</p>
+           <p>{{post.create_date}}</p>
        {% endfor %}
-
-   {{ post_list.body }}
+   {{ post.body }}
        </ul>
    {% else %}
        <p>There are no posts.</p>
    {% endif %}
-       {% endblock %}
+   {% endblock content %}
    </body>
 </html>
