@@ -1,3 +1,5 @@
+Source code: ![Lines of code](https://img.shields.io/tokei/lines/github/catafest/colab_google)
+
 # django_test_001
 testing django
 
